@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+		
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #one {
+            height: 250px;
+            width: 300px;
+            background: black;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #Two {
+            height: 250px;
+            width: 300px;
+            background: black;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #Three {
+            height: 250px;
+            width: 300px;
+            background: black;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        #btn1 {
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>FADE IN AND FADE OUT</h1>
+    </center>
+    <div id="one"></div>
+    <div id="Two"></div>
+    <div id="Three"></div>
+    <button id="btn1">fade Out</button>&nbsp;&nbsp;
+    <button id="btn2">fade In</button>&nbsp;&nbsp;
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#one").fadeOut(5500)
+                $("#Two").fadeOut(4500)
+                $("#Three").fadeOut(3500)
+            });
+            $("#btn2").click(function () {
+                $("#one").fadeIn(3000)
+                $("#Two").fadeIn(4000)
+                $("#Three").fadeIn(5000)
+            });
+        })
+    </script>
+</body>
+
+</html>
